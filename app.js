@@ -7,7 +7,7 @@ async function run() {
   // a valid username and password! Note that in a production environment,
   // you do not want to store your password in plain-text here.
   const uri =
-    "mongodb+srv://Sofi:Nikesocks21@cluster0.iojtrj5.mongodb.net/?retryWrites=true&w=majority";
+    "mongodb+srv://<user>:<pwd>@cluster0.iojtrj5.mongodb.net/?retryWrites=true&w=majority";
 
   // The MongoClient is the object that references the connection to our
   // datastore (Atlas, for example)
@@ -39,41 +39,6 @@ async function run() {
 
   const recipes = [
     {
-      name: "elotes",
-      ingredients: [
-        "corn",
-        "mayonnaise",
-        "cotija cheese",
-        "sour cream",
-        "lime",
-      ],
-      prepTimeInMinutes: 35,
-    },
-    {
-      name: "loco moco",
-      ingredients: [
-        "ground beef",
-        "butter",
-        "onion",
-        "egg",
-        "bread bun",
-        "mushrooms",
-      ],
-      prepTimeInMinutes: 54,
-    },
-    {
-      name: "patatas bravas",
-      ingredients: [
-        "potato",
-        "tomato",
-        "olive oil",
-        "onion",
-        "garlic",
-        "paprika",
-      ],
-      prepTimeInMinutes: 80,
-    },
-    {
       name: "sofi's fried rice",
       ingredients: [
         "shrimp",
@@ -86,19 +51,7 @@ async function run() {
       ],
       prepTimeInMinutes: 80,
     },
-    {
-      name: "fried rice",
-      ingredients: [
-        "rice",
-        "soy sauce",
-        "egg",
-        "onion",
-        "pea",
-        "carrot",
-        "sesame oil",
-      ],
-      prepTimeInMinutes: 40,
-    },
+    
   ];
 
   try {
